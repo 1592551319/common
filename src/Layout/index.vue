@@ -1,8 +1,16 @@
 <template>
   <Layout class="app-layout">
-    <Sider breakpoint="lg" :width="240"><MenuAside /> </Sider>
+    <Sider
+      :width="240"
+      v-model="collapse"
+      hide-trigger
+      collapsible
+      :collapsed-width="80"
+    >
+      <MenuAside :collapse="collapse" ref="menu" />
+    </Sider>
     <Layout>
-      <Header>头部</Header>
+      <Header />
       <Content>
         <Card dis-hover>
           <router-view></router-view>
@@ -14,10 +22,18 @@
 
 <script>
 import MenuAside from "./MenuSide/index.vue";
+import Header from "./Header";
 export default {
   components: {
     MenuAside,
+    Header,
   },
+  data() {
+    return {
+      collapse: false,
+    };
+  },
+  methods: {},
 };
 </script>
 
