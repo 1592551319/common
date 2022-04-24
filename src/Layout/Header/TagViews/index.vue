@@ -71,6 +71,7 @@ export default {
   methods: {
     ...mapMutations(["DEL_TAG_VIEWS"]),
     handleChangeTag(route) {
+      if (this.checkedTag == route.name) return;
       this.checkedTag = route.name;
       this.$router.push({
         ...route,

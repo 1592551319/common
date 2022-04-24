@@ -13,7 +13,9 @@
       <Header />
       <Content>
         <Card dis-hover>
-          <router-view></router-view>
+          <keep-alive :include="keepAliveMenu">
+            <router-view></router-view>
+          </keep-alive>
         </Card>
       </Content>
     </Layout>
@@ -31,6 +33,7 @@ export default {
   data() {
     return {
       collapse: false,
+      keepAliveMenu: ["directives"],
     };
   },
   methods: {},
