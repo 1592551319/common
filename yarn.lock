@@ -2966,6 +2966,11 @@ core-js-compat@^3.20.2, core-js-compat@^3.21.0, core-js-compat@^3.6.5:
     browserslist "^4.19.1"
     semver "7.0.0"
 
+core-js@^3.24.1:
+  version "3.24.1"
+  resolved "https://registry.npmmirror.com/core-js/-/core-js-3.24.1.tgz#cf7724d41724154010a6576b7b57d94c5d66e64f"
+  integrity sha512-0QTBSYSUZ6Gq21utGzkfITDylE8jWC9Ne1D2MrhvlsZBI1x39OdDIVbzSqtgMndIy6BlHxBXpMGqzZmnztg2rg==
+
 core-js@^3.6.5:
   version "3.21.1"
   resolved "https://registry.npmmirror.com/core-js/-/core-js-3.21.1.tgz#f2e0ddc1fc43da6f904706e8e955bc19d06a0d94"
@@ -5461,13 +5466,6 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.npmmirror.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha512-Yljz7ffyPbrLpLngrMtZ7NduUgVvi6wG9RJ9IUcyCd59YQ911PBJphODUcbOVbqYfxe1wuYf/LJ8PauMRwsM/g==
-
-iview-loader@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.npmmirror.com/iview-loader/-/iview-loader-1.3.0.tgz#9f462eeae2382b8b49ef8e892cd9681497e354b7"
-  integrity sha512-Tfv2lvSx+fAAqJo77oRo2j49tkbv4SiALLTsZ4iZH1nRCBmrH1uOdgERTkDGK1SuJJX5w3aGkQa6iGdXzNAytQ==
-  dependencies:
-    loader-utils "^1.1.0"
 
 javascript-stringify@^2.0.1:
   version "2.1.0"

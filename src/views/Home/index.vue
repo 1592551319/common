@@ -1,5 +1,7 @@
 <template>
-  <div class="app-home">欢迎使用barry_design</div>
+  <div class="app-home">
+    <p></p>
+  </div>
 </template>
 
 <script>

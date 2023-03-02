@@ -36,7 +36,11 @@ export default {
       keepAliveMenu: ["directives"],
     };
   },
-  methods: {},
+  methods: {
+    async handleOk() {
+      await 444;
+    },
+  },
 };
 </script>
 

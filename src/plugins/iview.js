@@ -16,6 +16,11 @@ import {
   Submenu,
   MenuItem,
   Tag,
+  InputNumber,
+  Table,
+  Modal,
+  Radio,
+  RadioGroup,
 } from "view-design";
 const components = [
   Button,
@@ -32,6 +37,11 @@ const components = [
   Submenu,
   MenuItem,
   Tag,
+  InputNumber,
+  Table,
+  Modal,
+  Radio,
+  RadioGroup,
 ];
 const iview = {
   install: function () {
@@ -40,6 +50,8 @@ const iview = {
     });
     Vue.component("Form", Form);
     Vue.component("FormItem", Form.Item);
+    Vue.component("Select", Select);
+    Vue.component("Option", Option);
     Vue.prototype.$Message = Message;
   },
 };
