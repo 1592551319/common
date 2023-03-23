@@ -1,32 +1,35 @@
 <template>
   <div class="directives">
     <Button v-permission="'admin'">权限指令</Button>
-    <br />
+    <br>
     <Button v-copy="'admin'">复制指令</Button>
-    <br />
+    <br>
     <Button v-debounce="handleDebounce">防抖指令</Button>
+    <!-- <Button @click="handleDecoratorDebounce">修饰器防抖</Button> -->
     {{ test }}
   </div>
 </template>
 
 <script>
+// import { debounce } from "@/plugins/decorator";
 export default {
-  name: "directives",
+  name: 'Directives',
   data() {
     return {
-      test: "",
-    };
+      test: ''
+    }
   },
-  mounted() {
-    setTimeout(() => (this.test = 666), 3000);
-    console.log(9999);
-  },
+  mounted() {},
   methods: {
     handleDebounce() {
-      this.$Message.success("888");
+      this.$Message.success('888')
     },
-  },
-};
+    // @debounce(100)
+    handleDecoratorDebounce() {
+      console.log('handleDecoratorDebounce')
+    }
+  }
+}
 </script>
 
 <style></style>

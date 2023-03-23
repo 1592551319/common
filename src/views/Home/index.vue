@@ -1,11 +1,14 @@
 <template>
-  <div class="app-home">
-    <p></p>
-  </div>
+  <div class="app-home">欢迎使用</div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {}
+  },
+  computed: {},
+  mounted() {},
+  methods: {}
+}
 </script>
-
-<style></style>

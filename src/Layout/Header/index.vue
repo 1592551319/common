@@ -5,15 +5,16 @@
 </template>
 
 <script>
-import TagViews from "./TagViews";
+import TagViews from './TagViews'
 export default {
   components: { TagViews },
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style lang="less" scoped>
 .main-header {
-  padding: 0;
+	padding: 0;
+	background-color: var(--theme-mode) !important;
 }
 </style>

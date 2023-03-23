@@ -11,7 +11,7 @@
       </Select> -->
       <Button slot="button" @click="handleCreateRoles">创建角色</Button>
     </Flexbox>
-    <Table :columns="columns1" :data="rolesList"></Table>
+    <Table :columns="columns1" :data="rolesList" />
 
     <Modal v-model="show" title="角色管理">
       <Form>
@@ -30,63 +30,64 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from "vuex";
-import Flexbox from "@/components/FlexBox.vue";
+import { mapGetters, mapMutations } from 'vuex'
+import Flexbox from '@/components/FlexBox.vue'
 export default {
   components: {
-    Flexbox,
+    Flexbox
   },
   data() {
     return {
       show: false,
       columns1: [
         {
-          title: "角色名称",
-          key: "name",
+          title: '角色名称',
+          key: 'name'
         },
         {
-          title: "状态",
-          key: "status",
+          title: '状态',
+          key: 'status'
         },
         {
-          title: "操作",
-          key: "address",
-        },
+          title: '操作',
+          key: 'address'
+        }
       ],
       data1: [
         {
-          name: "测试专用角色（勿动）",
-          status: 18,
+          name: '测试专用角色（勿动）',
+          status: 18
         },
         {
-          name: "开发专用角色（勿动）",
-          status: 18,
+          name: '开发专用角色（勿动）',
+          status: 18
         },
         {
-          name: "产品专用角色（勿动）",
-          status: 18,
-        },
-      ],
-    };
+          name: '产品专用角色（勿动）',
+          status: 18
+        }
+      ]
+    }
+  },
+  computed: {
+    ...mapGetters(['rolesList', 'tagViews'])
   },
   mounted() {},
-  computed: {
-    ...mapGetters(["rolesList", "tagViews"]),
-  },
+
   methods: {
-    ...mapMutations(["ADD_ROLES_LIST"]),
+    ...mapMutations(['ADD_ROLES_LIST']),
     handleCreateRoles() {
-      this.show = true;
-      console.log(this.rolesList, "rolesList");
+      this.show = true
+      console.log(this.rolesList, 'rolesList')
       this.ADD_ROLES_LIST({
         id: 1,
-        name: "超级管理员",
+        name: '超级管理员',
         status: 1,
-        tips: "超级管理员最屌哦",
-      });
-    },
-  },
-};
+        tips: '超级管理员最屌哦'
+      })
+    }
+  }
+}
 </script>
 
 <style></style>

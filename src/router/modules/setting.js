@@ -1,34 +1,34 @@
-import Layout from "@/Layout/index.vue";
+import Layout from '@/Layout/index.vue'
 export default [
   {
-    path: "/setting",
-    name: "setting",
+    path: '/setting',
+    name: 'setting',
     component: Layout,
-    redirect: "/setting/roles",
+    redirect: '/setting/roles',
     meta: {
-      title: "设置",
+      title: '设置'
     },
     children: [
       {
-        path: "roles",
-        name: "roles",
+        path: 'roles',
+        name: 'roles',
         component: (resolve) => {
-          require(["@/views/Setting/Roles"], resolve);
+          require(['@/views/Setting/Roles'], resolve)
         },
         meta: {
-          title: "角色管理",
-        },
+          title: '角色管理'
+        }
       },
       {
-        path: "permission",
-        name: "permission",
+        path: 'permission',
+        name: 'permission',
         component: (resolve) => {
-          require(["@/views/Setting/Permission"], resolve);
+          require(['@/views/Setting/Permission'], resolve)
         },
         meta: {
-          title: "权限管理",
-        },
-      },
-    ],
-  },
-];
+          title: '权限管理'
+        }
+      }
+    ]
+  }
+]
