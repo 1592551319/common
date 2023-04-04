@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       collapse: false,
-      keepAliveMenu: ['directives', 'view-design']
+      keepAliveMenu: ['directives', 'ViewDesign']
     }
   },
   methods: {

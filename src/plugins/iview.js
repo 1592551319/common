@@ -27,9 +27,11 @@ import {
   Collapse,
   Panel,
   Tooltip,
-  Divider
+  Divider,
+  Upload
 } from 'view-design'
 const components = [
+  Upload,
   Divider,
   Tooltip,
   Panel,
